@@ -1,22 +1,16 @@
-ThinkWell
 ThinkWell is a Xamarin-based mental health application designed to help users gain insights into their mental health, foster connections, and access local resources. Developed in collaboration with a team, this app emphasizes self-awareness, community, and support.
 
-![ThinkWell_LandingPage_cropped](https://github.com/user-attachments/assets/665fcfd6-f87c-4c90-b29c-8612137aa604)
-
-
+<p align="center"> <img src="https://github.com/user-attachments/assets/665fcfd6-f87c-4c90-b29c-8612137aa604" alt="ThinkWell Landing Page" width="600"> </p>
 🌟 Features
 1. Daily Mood Tracking
 Record your mood through an optional survey each day you log in.
-![Survey2JPG](https://github.com/user-attachments/assets/8c4dcc26-1008-4d12-a489-810ccea0528b)
-
+<p align="center"> <img src="https://github.com/user-attachments/assets/8c4dcc26-1008-4d12-a489-810ccea0528b" alt="Survey Screenshot" width="400"> </p>
 Analyze trends and discrepancies to identify potential influences, such as:
 Diet and nutrition
 Exercise habits
 Weather conditions
 Lunar phases and other external factors
-
-![ResultsJPG](https://github.com/user-attachments/assets/381e0b1b-88bf-4f8a-b34d-4a2a97f348fe)
-
+<p align="center"> <img src="https://github.com/user-attachments/assets/381e0b1b-88bf-4f8a-b34d-4a2a97f348fe" alt="Results Screenshot" width="400"> </p>
 2. AI-Powered Friend & Companion
 Engage with ChatGPT for friendly, supportive conversations.
 A helpful companion for when you're feeling lonely or just need someone to talk to.
