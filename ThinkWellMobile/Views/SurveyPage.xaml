@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:radiobutton="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             mc:Ignorable="d"
+             x:Class="ThinkWellMobile.Views.SurveyPage"
+             Shell.NavBarIsVisible="False"
+			 Shell.TabBarIsVisible="False">
+
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+			<Label Text="ThinkWell Mental Health Survey" FontAttributes="Bold" FontSize="24" HorizontalOptions="CenterAndExpand" Margin="0,10,0,20" />
+
+			<!-- Question 1 -->
+			<Label Text="Question 1: How are you feeling today?" FontSize="18" TextColor="Black" Margin="0,10,0,5" />
+			<StackLayout Margin="0,0,0,10">
+				<radiobutton:RadioButtonGroupView x:Name="Question1Options">
+					<radiobutton:RadioButton Text="Good" />
+					<radiobutton:RadioButton Text="Okay" />
+					<radiobutton:RadioButton Text="Not so good" />
+				</radiobutton:RadioButtonGroupView>
+			</StackLayout>
+
+			<!-- Question 2 -->
+			<Label Text="Question 2: Are you experiencing stress?" FontSize="18" TextColor="Black" Margin="0,10,0,5" />
+			<StackLayout Margin="0,0,0,10">
+				<radiobutton:RadioButtonGroupView x:Name="Question2Options">
+					<radiobutton:RadioButton Text="Yes" />
+					<radiobutton:RadioButton Text="No" />
+				</radiobutton:RadioButtonGroupView>
+			</StackLayout>
+
+			<!-- Question 3 -->
+			<Label Text="Question 3: Have you slept well?" FontSize="18" TextColor="Black" Margin="0,10,0,5" />
+			<StackLayout Margin="0,0,0,10">
+				<radiobutton:RadioButtonGroupView x:Name="Question3Options">
+					<radiobutton:RadioButton Text="Yes" />
+					<radiobutton:RadioButton Text="No" />
+				</radiobutton:RadioButtonGroupView>
+			</StackLayout>
+
+			<!-- Question 4 -->
+			<Label Text="Question 4: How would you rate your mood?" FontSize="18" TextColor="Black" Margin="0,10,0,5" />
+			<StackLayout Margin="0,0,0,10">
+				<radiobutton:RadioButtonGroupView x:Name="Question4Options">
+					<radiobutton:RadioButton Text="Happy" />
+					<radiobutton:RadioButton Text="Neutral" />
+					<radiobutton:RadioButton Text="Sad" />
+				</radiobutton:RadioButtonGroupView>
+			</StackLayout>
+
+			<!-- Question 5 -->
+			<Label Text="Question 5: Are you seeking professional help for mental health?" FontSize="18" TextColor="Black" Margin="0,10,0,5" />
+			<StackLayout Margin="0,0,0,10">
+				<radiobutton:RadioButtonGroupView x:Name="Question5Options">
+					<radiobutton:RadioButton Text="Yes" />
+					<radiobutton:RadioButton Text="No" />
+				</radiobutton:RadioButtonGroupView>
+			</StackLayout>
+
+			<Button Text="Submit" Command="{Binding SubmitCommand}" BackgroundColor="{StaticResource Primary}" TextColor="{StaticResource Secondary}" HeightRequest="50" CornerRadius="5" Margin="0,20,0,0" />
+
+			<!-- Footer -->
+			<Label Text="Presented By: ThinkFast" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

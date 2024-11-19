@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ThinkWellMobile.Views"
+             x:Class="ThinkWellMobile.Views.ResourcesPage"
+             Title="Local Help Resources">
+	<ContentPage.Content>
+		<StackLayout Padding="20">
+			<Label Text="Local Help Resources" FontAttributes="Bold" FontSize="24" HorizontalOptions="CenterAndExpand" Margin="0,10,0,20" />
+
+			<!-- Add your UI elements here for displaying the mental health facilities -->
+			<!-- You can use ListView, Labels, or other controls as needed -->
+
+			<ListView x:Name="FacilityListView" ItemsSource="{Binding Facilities}" HasUnevenRows="True">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Padding="10">
+								<Label Text="{Binding Name}" FontAttributes="Bold" />
+								<Label Text="{Binding Address}" FontSize="Small" TextColor="Gray" />
+								<!-- Add other facility information as needed -->
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+
+			<!-- Add additional UI elements as needed for buttons, navigation, etc. -->
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

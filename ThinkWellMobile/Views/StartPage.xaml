@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThinkWellMobile.Views.StartPage"
+             xmlns:vm="clr-namespace:ThinkWellMobile.ViewModels"
+             Title="{Binding Title}">
+
+	<ContentPage.BindingContext>
+		<vm:StartViewModel />
+	</ContentPage.BindingContext>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<ScrollView Grid.Row="1">
+			<StackLayout x:Name="LogoStackLayout" BackgroundColor="{StaticResource Secondary}">
+				<!-- Logo and App Name -->
+				<StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+					<StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+						<ContentView Padding="0,24,0,24" VerticalOptions="FillAndExpand">
+							<Image Source="thinkwell_logo.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFit"/>
+						</ContentView>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+						<Label Text="ThinkWell" FontSize="55" FontFamily="CopperplateG" TextColor="Black"/>
+					</StackLayout>
+				</StackLayout>
+				<!-- Mid info -->
+				<StackLayout Orientation="Vertical" Padding="24,6,24,24" Spacing="10">
+					<Label Text="Welcome to ThinkWell! We're here to help." FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+					<Label></Label>
+					<Frame BackgroundColor="#2196F3" CornerRadius="10" HasShadow="True">
+						<Label Text="ThinkWell is an application designed to help you determine the state of your mental health and provide resources to help you get back in control. By answering short daily surveys, ThinkWell is able to determine your 'Mental Health Score'. Using this score, ThinkWell will be able to better predict and provide the resources you need."
+                           FontSize="18" Padding="10" TextColor="{StaticResource Secondary}"/>
+					</Frame>
+					<Label></Label>
+					<Label></Label>
+					<Button Margin="0,-10,0,0" Text="Sign Up"
+                        Command="{Binding NavigateToSignUpPageCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="{StaticResource Secondary}" />
+
+					<!-- Footer -->
+					<Label Text="Presented By: ThinkFast" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" />
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</Grid>
+</ContentPage>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ThinkWellMobile.Views"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="ThinkWellMobile.Views.AnalyticsPage"
+             Title="Analytics">
+	
+<!--
+This page will show
+analytic information
+in pie charts
+-->
+
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="20">
+				<Label Text="User Analytics" FontAttributes="Bold" FontSize="24" TextColor="Black" HorizontalOptions="CenterAndExpand" Margin="0,10,0,20" />
+
+				<!-- First Pie Chart -->
+				<Label Text="Gender" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+				<microcharts:ChartView Chart="{Binding PieChart1}" WidthRequest="300" HeightRequest="200"  />
+				
+				<!-- Second Pie Chart -->
+				<Label Text="Sexuality" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+				<microcharts:ChartView Chart="{Binding PieChart2}" WidthRequest="300" HeightRequest="200" />
+
+				<!-- Third Pie Chart -->
+				<Label Text="Something Else" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+				<microcharts:ChartView Chart="{Binding PieChart3}" WidthRequest="300" HeightRequest="200" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

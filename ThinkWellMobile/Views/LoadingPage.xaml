@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ThinkWellMobile.Views.LoadingPage"
+             Shell.NavBarIsVisible="False"
+			 Shell.TabBarIsVisible="False">
+	
+	<ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+
+			<!-- Empty Rows for Spacing -->
+			<BoxView Grid.Row="1" BackgroundColor="Transparent" />
+			<BoxView Grid.Row="3" BackgroundColor="Transparent" />
+
+			<StackLayout Grid.Row="2" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+				<Frame BackgroundColor="{StaticResource Primary}" CornerRadius="10" Padding="10">
+					<Image Source="{Binding ImageUrl}" WidthRequest="300" HeightRequest="300" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+				</Frame>
+			</StackLayout>
+			<Label Grid.Row="4" Text="Welcome {User}..." FontSize="25" HorizontalOptions="Center" TextColor="Black" />
+		</Grid>
+	</ContentPage.Content>
+	
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ThinkWellMobile.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Padding="10,50,10,0" HorizontalOptions="Center">
+
+			<Frame BackgroundColor="{StaticResource Primary}" CornerRadius="10" Padding="50" Margin="0,0,0,50">
+				<Label Text="Welcome Back" FontSize="50" TextColor="{StaticResource Secondary}" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" />
+			</Frame>
+			
+			<!-- Username Entry -->
+			<Entry Placeholder="Username" x:Name="UsernameEntry" Margin="0,0,0,20"/>
+
+			<!-- Password Entry -->
+			<Entry Placeholder="Password" x:Name="PasswordEntry" IsPassword="True" Margin="0,0,0,20"/>
+
+			<Label></Label>
+			<Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

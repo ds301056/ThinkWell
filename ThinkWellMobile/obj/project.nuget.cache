@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "aYxpxy4XFopH9aycW9qn+cV1mR7clC7bJQ1VOCTF6/LFK7vCBn1sd5FwL3PyDoJa0N8Uno+qESFMFXx0FAjrrA==",
+  "success": true,
+  "projectFilePath": "D:\\Azure\\ThinkWellMobile\\ThinkWellMobile.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\singletond\\.nuget\\packages\\microcharts\\0.9.5.9\\microcharts.0.9.5.9.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\microcharts.forms\\0.9.5.9\\microcharts.forms.0.9.5.9.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\oxyplot.xamarin.forms\\2.1.0\\oxyplot.xamarin.forms.2.1.0.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\skiasharp.views.forms\\2.80.2\\skiasharp.views.forms.2.80.2.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\xamarin.essentials\\1.8.0\\xamarin.essentials.1.8.0.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\xamarin.forms\\5.0.0.2612\\xamarin.forms.5.0.0.2612.nupkg.sha512",
+    "C:\\Users\\singletond\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.6\\xamarin.forms.inputkit.4.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}
